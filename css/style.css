@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Simpsons';
+    src: url(../font/Simpsonfont\ DEMO.otf);
+}
+
+:root {
+    --bg-primary : yellow;
+    --text-color-title : pink;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    width: 100vw;
+    padding: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quoteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: var(--text-color-title);
+    font-family: 'Simpsons';
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+}
+
+.quoteWrapper {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#quote {
+    font-size: 2vw;
+    padding: 4rem;
+}
+#character {
+    font-size: 1vw;
+    color: var(--text-color-title);
+    padding: 4rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+#charImage {
+    height: 30%;
+}
+
+#changeQuote {
+    font-family: 'Simpsons';
+    padding: 2rem;
+    background-color: var(--text-color-title);
+    color: var(--bg-primary);
+    border-radius: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
